@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>contact us</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="Stylesheet" type="text/css" />
+    <link href="css/contact.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="index.html"><img src="pics/Noob Gamer.png" alt="Noob Gamer" /></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="Aboutus.html" id="login-about-button">ABOUT US</a>
+        </div>
+    </header>
+
+    <div class="MainArea">
+        <form action="#">
+            <label for="GamerName">Gamer NAME <em>&#x2a;</em></label><input id="GamerName" name="GamerName" required="" type="text" />
+            <label for="GamerEmail">Gamer's EMAIL <em>&#x2a;</em></label><input id="GamerEmail" name="GamerEmail" required="" type="email" />
+            <label for="GamerPhone">Gamer's PHONE</label><input id="GamerPhone" name="GamerPhone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" type="tel" />
+            <label for="GamerNote">Gamer's word of Advice <em>&#x2a;</em></label><textarea id="GamerNote" name="GamerNote" required="" rows="4"></textarea>
+            <h3>
+                Please provide all the information about your issue you can.
+            </h3>
+                <button id="contactUsBtn">SUBMIT</button>
+        </form>
+      </div>
+
+
+
+</body>
+</html>

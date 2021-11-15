@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Games</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/games.css" rel="Stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="Stylesheet" type="text/css" />
+</head>
+<body>
+    <header>
+        <div class="flex">
+            <div class="logo">
+                <a href="index.html"><img src="pics/Noob Gamer.png" alt="Noob Gamer" /></a>
+            </div>
+            <nav>
+                <button id="nav-toggle" class="hamburger-menu">
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                    <span class="strip"></span>
+                </button>
+                <ul id="nav-menu-container">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="games.html">Games</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="Aboutus.html" id="login-about-button">ABOUT US</a>
+        </div>
+    </header>
+
+    <section>
+        <div class="slideshow-container">
+
+            <div class="mySlides fade">
+                <img src="pics/slider1.jpg" style="width:100%">
+                <div class="text">FARCRY 6 sales are on fire.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pics/slider2.jpg" style="width:100%">
+                <div class="text">God of war 4 is for pc in 2022.</div>
+            </div>
+
+            <div class="mySlides fade">
+                <img src="pics/slider3.jpg" style="width:100%">
+                <div class="text">Syperman is free for macbook now.</div>
+            </div>
+            
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+        </div>
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <section>
+        <div class="VideoSection">
+            <h1>LATEST TEASER OF NEW GAME</h1>
+            <div class="teaserrow">
+                <div class="teasercol">
+                    <div class="features-img">
+                        <img src="pics/mk.jpeg" width="100%">
+                        <img src="pics/play.png" class="play-btn" onclick="playVideo('video/Mortal Kombat 11.mp4')">
+                    </div>
+                
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="pics/gtat.png">
+                            <img src="pics/play.png" class="play-btns" onclick="playVideo('video/gta.mp4')">
+                        </div>
+                        <p>GTA TRIOLOGY NEW 2020 TEASER IS OUT CHECK IT OUT AND STAY UPDATED.</p>
+                    </div>
+                
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="pics/mii.jpg">
+                            <img src="pics/play.png" class="play-btns" onclick="playVideo('video/Mafia_ Trilogy - Official Teaser.mp4')">
+                        </div>
+                        <p>MAFIA II NEW 2020 TEASER IS OUT CHECK IT OUT AND STAY UPDATED.</p>
+                    </div>
+            
+                    <div class="small-img-row">
+                        <div class="small-img">
+                            <img src="pics/swjd.jpg">
+                            <img src="pics/play.png" class="play-btns" onclick="playVideo('video/Star Wars Jedi.mp4')">
+                        </div>
+                        <p>STAR WAR LAST JEDI NEW 2020 TEASER IS OUT CHECK IT OUT AND STAY UPDATED.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    
+        <div class="video-player" id="videoPlayer">
+            <video width="100%" controls autoplay id="myVideo">
+                <source src="video/Mortal Kombat 11.mp4" type="video/mp4">
+            </video>
+                <img src="pics/close.png" class="close-btn" onclick="stopVideo()">
+        </div>
+
+        <script src="js/games.js"></script>
+</body>
+</html>
