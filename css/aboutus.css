@@ -6,37 +6,9 @@ body{
     background: url('../pics/lastou.jpg') top center no-repeat;
 }
 
-.column-2 {
-  float: left;
-  width: 30%;
-  padding: 40px;
-  padding-left:60px;
-  padding-right: 90px;
-  height: 250px;
-  margin:30px;
-  margin-right:90px;
-  margin-bottom: 70px;
-  background-color: transparent;
-  line-height:2;
-  border-radius: 25px;
-  
-  
-}
-.column-2 h1,p{
-    color: white;
-}
-
-.column-2 p{
-    font-size: medium;
-}
-.column-2:hover{
-    background-color: #b5e2ff;
-}
-
-span{
-  color: orange;
-}
-
-.column-2 h7 {
-  color: rgb(113, 159, 219);
+@import url(https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css);
+.card-body{
+  color: white;
+  background-color: black;
+  font-family: Verdana, sans-serif; margin:0;
 }
